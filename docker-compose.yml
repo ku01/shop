@@ -1,0 +1,12 @@
+version: "3.3"
+
+services:
+  invoice-postgres:
+    build:
+      context: ./docker
+      dockerfile: postgres.Dockerfile
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_USER=shopuser
+      - POSTGRES_PASSWORD=shopshopshop

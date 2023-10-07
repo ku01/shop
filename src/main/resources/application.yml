@@ -1,2 +1,12 @@
-
-0
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/shop
+    username: shopuser
+    password: shopshopshop
+    driver-class-name: org.postgresql.Driver
+    hikari:
+      maximum-pool-size: 16
+      auto-commit: false
+      connection-timeout: 10000
+      idle-timeout: 60000
+      minimum-idle: 2
