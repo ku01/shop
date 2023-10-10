@@ -10,7 +10,6 @@ import org.testcontainers.utility.MountableFile;
 abstract public class BaseGraphQLTest {
     protected static String DATABASE_NAME = "shop";
 
-    @ClassRule
     public static PostgreSQLContainer postgreSQLContainer =
             (PostgreSQLContainer)
                     new PostgreSQLContainer("postgres:16.0-alpine")
