@@ -1,0 +1,32 @@
+type Item {
+    id: ID!
+    sku: String!
+    description: String!
+    price: Float!
+}
+
+type User {
+    id: ID!
+    name: String!
+    email: String!
+    country: String!
+}
+
+type Order {
+    id: ID!
+    user: User!
+    total: Float!
+    orderItems: [OrderItem!]!
+}
+
+type OrderItem {
+    orderId: Int!
+    quantity: Int!
+    amount: Float!
+    item: Item!
+}
+
+type Query {
+    getOrders(country: String): [Order!]!
+    getOrderItems: [OrderItem!]!
+}

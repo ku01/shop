@@ -3,7 +3,7 @@ package dev.ku01.shop;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-@SpringBootApplication
+@SpringBootApplication(scanBasePackages = "dev.ku01.shop")
 public class ShopApplication {
 
 	public static void main(String[] args) {

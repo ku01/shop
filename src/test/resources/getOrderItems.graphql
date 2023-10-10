@@ -1,0 +1,13 @@
+{
+    getOrderItems {
+        orderId
+        quantity
+        amount
+        item {
+            id
+            sku
+            description
+            price
+        }
+    }
+}

@@ -1,0 +1,12 @@
+{
+    getOrders {
+        id
+        user {
+            id
+            name
+            email
+            country
+        }
+        total
+    }
+}
