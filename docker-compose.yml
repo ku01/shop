@@ -1,9 +1,9 @@
 version: "3.3"
 
 services:
-  invoice-postgres:
+  shop-postgres:
     build:
-      context: ./docker
+      context: .
       dockerfile: postgres.Dockerfile
     ports:
       - "5432:5432"
