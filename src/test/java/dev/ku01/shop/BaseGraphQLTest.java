@@ -1,6 +1,5 @@
 package dev.ku01.shop;
 
-import org.junit.ClassRule;
 import org.springframework.boot.test.util.TestPropertyValues;
 import org.springframework.context.ApplicationContextInitializer;
 import org.springframework.context.ConfigurableApplicationContext;
@@ -8,7 +7,7 @@ import org.testcontainers.containers.PostgreSQLContainer;
 import org.testcontainers.utility.MountableFile;
 
 abstract public class BaseGraphQLTest {
-    protected static String DATABASE_NAME = "shop";
+    private static final String DATABASE_NAME = "shop";
 
     public static PostgreSQLContainer postgreSQLContainer =
             (PostgreSQLContainer)
